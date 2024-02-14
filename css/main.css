@@ -63,7 +63,7 @@ iframe {
   display: flex;
   align-items: center;
   padding: 0 20px;
-  transition: background-color 150ms ease-in;
+  transition: background-color 100ms ease-in;
 }
 
 .global_nav_item:hover {
@@ -202,18 +202,31 @@ iframe {
 .coffee_menu_item {
   width: 49%;
   display: flex;
-  column-gap: 25px;
+  column-gap: 20px;
+  align-items: center;
   flex-direction: row-reverse;
   padding: 10px;
 }
 
 .coffee_menu_image {
   width: 20%;
+  height: max-content;
   border-radius: 50%;
 }
 
 .coffee_menu_content {
   width: 80%;
+  padding: 10px;
+}
+
+/** Button */
+.btn {
+  padding: 0.8rem 2rem;
+  border: 2px solid var(--ttcolor);
+  border-radius: calc(var(--border-sm) - 5px);
+  cursor: pointer;
+  color: var(--pmcolor);
+  background-color: rgba(127, 136, 182, 1);
 }
 
 /** Info*/
@@ -248,13 +261,16 @@ footer {
   bottom: -75px;
   padding-bottom: 10px;
   height: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer_nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 5px 0;
 }
 
 .footer_nav_item {
