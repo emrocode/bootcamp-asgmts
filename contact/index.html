@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DIC Coffee &ndash; Contact</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/contact_validation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <main>
+      <!-- Header -->
+      <header class="header_nav">
+        <nav class="header_nav">
+          <a href="/" class="logo">
+            <img src="../images/sample_logo_k.png" alt="DIC Coffee Logo" />
+          </a>
+          <ul class="global_nav">
+            <a href="/" class="global_nav_item">
+              <li>Home</li>
+            </a>
+            <a href="#" class="global_nav_item">
+              <li>Menu</li>
+            </a>
+            <a href="/contact" class="global_nav_item">
+              <li>Contact</li>
+            </a>
+          </ul>
+        </nav>
+      </header>
+      <div class="section_inner"></div>
+      <!-- Section -->
+      <section class="section_inner">
+        <div class="section_title">
+          <h1>CONTACT</h1>
+          <p>お問い合わせ</p>
+        </div>
+        <form action="#" method="POST" id="form">
+          <table class="contact">
+            <tr class="contact_line">
+              <td class="contact_sign"><label for="name">お名前</label></td>
+              <td class="contact_input">
+                <input type="text" name="name" id="name" required />
+              </td>
+            </tr>
+            <tr class="contact_line">
+              <td class="contact_sign"><label for="email">Eメール</label></td>
+              <td class="contact_input">
+                <input type="email" name="email" id="email" required />
+              </td>
+            </tr>
+            <tr class="contact_line">
+              <td class="contact_sign">
+                <label for="email_confirm">Eメール(確認)</label>
+              </td>
+              <td class="contact_input">
+                <input
+                  type="email"
+                  name="email_confirm"
+                  id="email_confirm"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td id="content_field"></td>
+            </tr>
+            <tr class="contact_content">
+              <td class="contact_sign"><label for="content">内容</label></td>
+              <td class="contact_input">
+                <textarea name="content" id="content"></textarea>
+              </td>
+            </tr>
+          </table>
+          <div class="contact_btn_area">
+            <button type="reset" class="contact_btn reset_btn">リセット</button>
+            <button type="submit" class="contact_btn submit_btn">
+              送信する
+            </button>
+          </div>
+        </form>
+      </section>
+      <!-- Footer -->
+      <footer>
+        <nav>
+          <ul class="footer_nav">
+            <a class="footer_nav_item" href="/">
+              <li>Home</li>
+            </a>
+            <a class="footer_nav_item" href="#">
+              <li>Menu</li>
+            </a>
+            <a class="footer_nav_item" href="/contact">
+              <li>Contact</li>
+            </a>
+            <a class="footer_nav_item" href="/">
+              <li>
+                <img src="../images/sample_logo_w.png" class="footer_logo" />
+              </li>
+            </a>
+          </ul>
+        </nav>
+        <p class="footer_right">© DIVIC Corp. All RIGHTS RESERVED.</p>
+      </footer>
+    </main>
+    <script type="text/javascript" src="../js/mail_validation.js"></script>
+  </body>
+</html>
