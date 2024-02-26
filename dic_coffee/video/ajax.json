@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Next.js App Router: Routing, Data Fetching, Caching",
+    "description": "Leerob, VP of Developer Experience at Vercel, explains new concepts and foundations of Next.js app router, including layouts, dynamic routes, and data fetching.",
+    "url": "<iframe width='560' height='315' src='https://www.youtube.com/embed/gSSsZReIFRk?si=Nvqmi0L9RCzGmHUM' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+  },
+  {
+    "title": "GitHub Game Off 2023 results",
+    "description": "Game Off is GitHub's annual game jam challenging individuals and teams to build a game during the month of November.",
+    "url": "<iframe width='560' height='315' src='https://www.youtube.com/embed/jXyBsaioXFA?si=eFGPzmTP4x4fmsjO' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+  },
+  {
+    "title": "15 Minutes to Merge: The top feature announcements from GitHub Universe!",
+    "description": "Tune in as April Edwards and Damian Brady come to you from GitHub Universe where they are summarizing some of the biggest announcements.",
+    "url": "<iframe width='560' height='315' src='https://www.youtube.com/embed/xkIH2HM_ZIQ?si=JAUof2NKecuqor5l' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+  }
+]
