@@ -6,7 +6,9 @@ def enter_evaluation():
             point = int(point)
             if point <= 0 or point > 5:
                 print("Please enter from 1 to 5")
-                point = input()
+                # point = input()
+                # Repeat loop
+                continue
             else:
                 print("Please enter your comment")
                 comment = input()
@@ -29,14 +31,16 @@ while True:
     print("1:Enter evaluation points and comments")
     print("2:Check the result so far")
     print("3:Finish")
-    num = int(input())
+    num = input()
 
-    if num == 1:
-        enter_evaluation()
-    elif num == 2:
-        check_results()
-    elif num == 3:
-        print("Will end")
-        break
-    else:
-        print("Please enter from 1 to 3")
+    if num.isdigit():
+        num = int(num)
+        if num == 1:
+            enter_evaluation()
+        elif num == 2:
+            check_results()
+        elif num == 3:
+            print("Will end")
+            break
+        else:
+            print("Please enter from 1 to 3")
