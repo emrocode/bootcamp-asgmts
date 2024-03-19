@@ -27,4 +27,4 @@ function emailValidation() {
   });
 }
 
-window.onload = () => emailValidation();
+window.onload = emailValidation;
