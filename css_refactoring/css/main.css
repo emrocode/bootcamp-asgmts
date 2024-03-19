@@ -287,3 +287,11 @@ body {
 .btn-disabled {
   background: rgba(0,0,0,0.3);
 }
+
+/* new styles */
+.block {
+  flex-direction: column;
+}
+.full {
+  width: 100%;
+}
