@@ -47,42 +47,55 @@ html(lang='en')
                             // to get an API token!
 
                             form#contactForm(data-sb-form-api-token='API_TOKEN')
-                                .form-floating
-                                    input#name.form-control(
+                                .row.mb-3
+                                    label.col-4.mr-auto(for='name') Name
+                                    input#name.col.form-control.p-3.rounded(
                                         type='text',
                                         placeholder='Enter your name...',
                                         data-sb-validations='required'
                                     )
-                                    label(for='name') Name
                                     .invalid-feedback(data-sb-feedback='name:required')
                                         | A name is required.
-                                .form-floating
-                                    input#email.form-control(
+                                .row.mb-3
+                                    label.col-4.mr-auto(for='email') Email address
+                                    input#email.col.form-control.p-3.rounded(
                                         type='email',
                                         placeholder='Enter your email...',
                                         data-sb-validations='required,email'
                                     )
-                                    label(for='email') Email address
                                     .invalid-feedback(data-sb-feedback='email:required')
                                         | An email is required.
                                     .invalid-feedback(data-sb-feedback='email:email')
                                         | Email is not valid.
-                                .form-floating
-                                    input#phone.form-control(
-                                        type='tel',
-                                        placeholder='Enter your phone number...',
-                                        data-sb-validations='required'
-                                    )
-                                    label(for='phone') Phone Number
+                                .row.mb-3
+                                    label.col-4.mr-auto(for='#') Sex
+                                    .col
+                                        .d-flex.gap-2
+                                            input#male(
+                                                type='radio',
+                                                name='option'
+                                                value='0'
+                                                data-sb-validations='required'
+                                                checked
+                                            )
+                                            label(for="male") Man
+                                        .d-flex.gap-2
+                                            input#female(
+                                                type='radio',
+                                                name='option'
+                                                value='1'
+                                                data-sb-validations='required'
+                                            )
+                                            label(for="female") Woman
                                     .invalid-feedback(data-sb-feedback='phone:required')
                                         | A phone number is required.
-                                .form-floating
-                                    textarea#message.form-control(
+                                .row.mb-3
+                                    label.col-4.mr-auto(for='message') Message
+                                    textarea#message.col.form-control.p-3.rounded(
                                         placeholder='Enter your message here...',
                                         style='height: 12rem;',
                                         data-sb-validations='required'
                                     )
-                                    label(for='message') Message
                                     .invalid-feedback(data-sb-feedback='message:required')
                                         | A message is required.
 
