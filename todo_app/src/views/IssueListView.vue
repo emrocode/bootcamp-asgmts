@@ -53,7 +53,19 @@ export default {
             this.loading = false
           }, 2000)
         })
-    }
+    },
+    closeIssue(index) {
+      // const target = this.issues[index]
+      this.issues.splice(index, 1)
+      // Need configure AUTHORIZATION
+      // client
+      //   .patch(`/issues/${target.number}`, {
+      //     state: 'closed'
+      //   })
+      //   .then(() => {
+      //     this.issues.splice(index, 1)
+      //   })
+    },
   }
 }
 </script>
