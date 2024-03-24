@@ -27,6 +27,7 @@ import axios from 'axios'
 const client = axios.create({
   baseURL: `${import.meta.env.VITE_APP_GITHUB_ENDPOINT}`,
   headers: {
+    'Authorization': `token ${import.meta.env.VITE_APP_GITHUB_TOKEN}`,
     Accept: 'application/vnd.github.v3+json',
     'Content-Type': 'application/json'
   }
@@ -55,16 +56,14 @@ export default {
         })
     },
     closeIssue(index) {
-      // const target = this.issues[index]
-      this.issues.splice(index, 1)
-      // Need configure AUTHORIZATION
-      // client
-      //   .patch(`/issues/${target.number}`, {
-      //     state: 'closed'
-      //   })
-      //   .then(() => {
-      //     this.issues.splice(index, 1)
-      //   })
+      const target = this.issues[index]
+      client
+        .patch(`/issues/${target.number}`, {
+          state: 'closed'
+        })
+        .then(() => {
+          this.issues.splice(index, 1)
+        })
     },
   }
 }
