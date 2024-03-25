@@ -4,7 +4,7 @@
       <el-row :gutter="12">
         <el-col :span="21">{{ todo }}</el-col>
         <el-col :span="3">
-          <el-button @click="removeTodo(index)" type="success" circle>
+          <el-button @click="fn(id)" type="success" circle>
             <el-icon><Check /></el-icon>
           </el-button>
         </el-col>
@@ -18,8 +18,8 @@ export default {
   name: 'TodoItem',
   props: {
     todo: String,
-    index: Number,
-    removeTodo: Function
-  },
+    id: Number,
+    fn: Function
+  }
 }
 </script>

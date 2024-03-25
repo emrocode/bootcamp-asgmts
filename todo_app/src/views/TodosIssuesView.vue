@@ -10,23 +10,18 @@
       <TodoItem
         v-for="(todo, index) in todos"
         :todo="todo"
-        :index="index"
-        :removeTodo="removeTodo"
+        :id="index"
+        :fn="removeTodo"
         :key="index"
       />
       <!-- Issue Display Area -->
-      <el-col :span="12" v-for="(issue, index) in issues" :key="issue.id">
-        <el-card class="box-card" shadow="hover" style="margin: 5px 0">
-          <el-row :gutter="12">
-            <el-col :span="21">{{ issue.title }}</el-col>
-            <el-col :span="3">
-              <el-button @click="closeIssue(index)" type="success" circle>
-                <el-icon><Check /></el-icon>
-              </el-button>
-            </el-col>
-          </el-row>
-        </el-card>
-      </el-col>
+      <TodoItem
+        v-for="(issue, index) in issues"
+        :todo="issue.title"
+        :id="index"
+        :fn="closeIssue"
+        :key="index"
+      />
     </el-row>
   </div>
 </template>
@@ -38,7 +33,7 @@ import TodoItem from '@/components/TodoItem.vue'
 const client = axios.create({
   baseURL: `${import.meta.env.VITE_APP_GITHUB_ENDPOINT}`,
   headers: {
-    'Authorization': `token ${import.meta.env.VITE_APP_GITHUB_TOKEN}`,
+    Authorization: `token ${import.meta.env.VITE_APP_GITHUB_TOKEN}`,
     Accept: 'application/vnd.github.v3+json',
     'Content-Type': 'application/json'
   }
