@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block main %}
+<table>
+  <tbody>
+    <tr>
+      <th>User Name</th>
+      <td>{{ user.username }}</td>
+    </tr>
+    <tr>
+      <th>Email</th>
+      <td>{{ user.email }}</td>
+    </tr>
+    <tr>
+      <th>Age</th>
+      <td>{{ user.age }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<form action="{% url 'user_delete' user.id %}" method="post">
+  {% csrf_token %}
+  <input type="submit" value="Delete">
+</form>
+
+<a href="{% url 'user_detail' user.id %}">Back</a>
+{% endblock %}
