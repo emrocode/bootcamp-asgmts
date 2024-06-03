@@ -1,6 +1,3 @@
-[![Progress]][DIVIC]
-[![Assignments]][DIVIC]
-
 [![Image]][DIVIC]
 
 ## Coding bootcamp at [DIVIC], Sponsored by [CIDIT]
@@ -23,15 +20,13 @@ CIDIT creates global opportunities for young people in the technological field t
 ## Technologies & Tools
 [![Django]](https://www.djangoproject.com/)
 [![PostgreSQL]](https://www.postgresql.org/)
-[![Vue.js]](https://vuejs.org/)
+[![Vue.js]](https://vuejs.org/)\
 [![Bootstrap]](https://getbootstrap.com/)
 [![Supabase]](https://supabase.com)
 [![Vercel]](https://vercel.com/)
 
 [DIVIC]: https://diver.diveintocode.jp
 [CIDIT]: https://bootcamp.ciditpy.org/
-[Progress]: https://img.shields.io/badge/Progress-100%25-blue?style=for-the-badge
-[Assignments]: https://img.shields.io/badge/Assignments-100%25-brightgreen?style=for-the-badge
 [Image]: https://github.com/emrocode/bootcamp-asgmts/assets/92260849/9ebfd6ee-910c-42ee-aab5-e43af068290b
 [Django]: https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white
 [PostgreSQL]: https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white
